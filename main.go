@@ -129,7 +129,7 @@ func choose(o fyne.CanvasObject) {
 		subtitle.OnChanged = func(text string) {
 			obj.SetSubTitle(text)
 		}
-		items = []fyne.CanvasObject{widget.NewForm(widget.NewFormItem("Title", title), widget.NewFormItem("Title", subtitle))}
+		items = []fyne.CanvasObject{widget.NewForm(widget.NewFormItem("Title", title), widget.NewFormItem("Subtitle", subtitle))}
 	case *widget.Button:
 		entry := widget.NewEntry()
 		entry.SetText(obj.Text)
